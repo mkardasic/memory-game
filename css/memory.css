@@ -1,0 +1,147 @@
+body {
+    margin: auto;
+    background-image: url(../img/background_memory.jpg);
+    background-position: 0 6%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul {
+    margin: 0;
+}
+h3 {
+    margin-top: 10px;
+}
+h4 {
+    margin-bottom: 0;
+}
+.titleHighscore {
+    color: #333333;
+}
+.titleMemory {
+    font-weight: bold;
+    font-size: 12px;
+    color: #333333;
+}
+.titleFarm {
+    font-style: italic;
+    font-size: 22px;
+    font-family: Georgia, serif;
+    color: #333333;
+}
+.lblPlayer,
+.lblScore,
+.lblPlayerTime {
+    color: dimGray;
+    font-size: 14px;
+}
+.playerData {
+    color: #333333;
+}
+.divLabel {
+    padding: 5px 5px 0 0;
+}
+.divTile {
+    padding-left: 0;
+}
+.placeholder {
+    height: 120px;
+    width: 120px;
+    margin: 5px 10px 5px 0;
+    border: 1px solid #197F31;
+    border-radius: 2px;
+}
+.placeholder:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+.divHighscoreTitle {
+    margin: 0 0 5px 0;
+}
+.credit {
+    font-style: italic;
+    font-size: 10px;
+}
+.divCredit {
+    margin: 10px 0 0 0;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+}
+.tbl {
+    border: 1px solid #197F31;
+}
+.tblData {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #197F31;
+    background-color: rgb(255, 255, 255);
+}
+.tblHeader {
+    width: 250px;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #22B14C;
+    padding: 10px;
+    border: 1px solid #197F31;
+}
+@media(max-width:1200px) {
+    .titleHighscore {
+        color: white;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
+    .divCredit {
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:992px) {
+	.titleHighscore {
+        color: white;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
+	.divCredit {
+        margin-bottom: 10px;
+    }
+    .divHighscoreTitle {
+        margin-top: 30px;
+    }
+    .tblData {
+        background-color: rgb(255, 255, 255);
+        color: #333333;
+    }
+    .tblHeader {
+        width: 250px;
+        color: white;
+        font-weight: normal;
+        font-size: 16px;
+        background-color: #22B14C;
+    }
+}
+@media(max-width:767px) {
+	.titleHighscore {
+        color: white;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.4);
+    }
+	.divCredit {
+        margin-bottom: 10px;
+    }
+	.divTile {
+        padding-right: 0;
+    }
+	.tblData {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .tblHeader {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .placeholder {
+        width: 71px;
+        height: 71px;
+        margin: 5px 10px 5px 0;
+    }
+    .playerData {
+        font-size: 16px;
+    }
+}

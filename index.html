@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+    <meta name="description" content="Play farm-themed memory game by Mateja Kardašić">
+    <meta name="author" content="Mateja Kardašić">
+
+    <title>Memory game</title>
+    <link rel="icon" href="img/favicon.png">
+	
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/memory.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Game title -->
+        <h3><span class="titleFarm">"The farm life" </span>
+		<span class="titleMemory"> MEMORY GAME</span> 
+		</h3>
+
+        <div>
+            <!-- Music button -->
+            <button type="button" class="btn btn-default btn-sm" id="btnMusic">
+                <span class="glyphicon glyphicon-volume-up" id="checkMusicBtn"></span>
+            </button>
+
+            <!-- Replay button -->
+            <button type="button" class="btn btn-default btn-sm" id="btnReplay">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </button>
+
+            <!-- Pause/play button -->
+            <button type="button" class="btn btn-default btn-sm" id="btnPause">
+                <span class="glyphicon glyphicon-pause" id="checkPauseBtn"></span>
+            </button>
+        </div>
+
+        <!-- Player data -->
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <!-- Name -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-10 divLabel">
+                    <h4><span class="lblPlayer">Player:</span> <span id="playerName" class="playerData">X</span></h4>
+                </div>
+				
+                <!-- Score -->
+                <div class="col-lg- col-md-3 col-sm-2 col-xs-5 divLabel">
+                    <h4><span class="lblScore">Score:</span> <span id="playerScore" class="playerData">0</span></h4>
+                </div>
+				
+                <!-- Time -->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7 divLabel">
+                    <h4><span class="lblPlayerTime">Time:</span> 
+					<span id="playerTime" class="playerData">00:00:00</span>
+				</h4>
+                </div>
+				
+                <!-- Memory tiles -->
+                <div class="col-lg-11 col-md-10 col-sm-12 col-xs-12 divTile">
+                    <div id="tileRow">
+					<!-- tiles go here... -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-9 col-sm-12 col-xs-12">
+                <!-- Highscore title -->
+                <div class="col-lg-12 divLabel divHighscoreTitle">
+                    <h4><span class="titleHighscore">High scores</span></h4>
+                </div>
+
+                <!-- Highscore table -->
+                <div id="tblScore" w3-include-html="php/getHighscores.php"></div>
+
+                <!-- Credits -->
+                <div class="col-lg-12 divCredit">
+                    <ul>
+                        <!-- Photo credits -->
+                        <li>
+                            <span class="credit">Photo by <a href="https://unsplash.com/@tuna59">meriç tuna</a> 
+							on <a href="https://unsplash.com/search/farm">Unsplash</a></span>
+                        </li>
+                        <!-- Icon credits -->
+                        <li>
+                            <span class="credit"> Icons made by <a href="http://www.flaticon.com/authors/freepik">freepik</a> from www.flaticon.com </span>
+                        </li>
+                        <!-- Music credits -->
+                        <li>
+                            <span class="credit"> Music downloaded from <a href="http://www.bensound.com">Bensound</a> www.bensound.com </span>
+                        </li>
+                        <!-- Sound credits -->
+                        <li>
+                            <span class="credit"> Sounds downloaded from <a href="http://www.soundbible.com/">SoundBible</a> www.soundbible.com </span>
+                        </li>
+                </ul>
+				</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Used for dialog screens. -->
+    <script src="js/bootbox.min.js"></script>
+	<!-- Used for dynamic table creation -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- Custom JS -->
+    <script src="js/memory.min.js"></script>
+
+</body>
+
+</html>
