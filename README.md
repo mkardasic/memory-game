@@ -10,9 +10,9 @@ I also added some PHP to make the game more interesting with the track of Player
 -  🔄  replay option 
 
 # Play it online
-http://matejakardasic.com/memory.html
+<a href="http://matejakardasic.com/memory.html" target="_blank">Memory Game</a>
 
-![alt text](https://github.com/mkardasic/memory-game/blob/master/game_screenshot.PNG)
+![Game screenshot](https://github.com/mkardasic/memory-game/blob/master/game_screenshot.PNG)
 
 # Next
 Feel free to give your feedback or ideas. ☺️ 💡
